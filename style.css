@@ -26,6 +26,7 @@ button{
     font-size: .8rem;
     border: 2px solid #fff;
     margin-top: 1rem;
+    cursor: pointer;
 }
 .orange button{
     color: var(--orange-clr);
@@ -52,6 +53,7 @@ button:hover{
     margin: 4rem auto;
     border-radius: 10px;
     overflow: hidden;
+
 }
 .box{
     width: 100%;
@@ -84,5 +86,8 @@ button:hover{
 @media only screen and (min-width: 800px){
     .container{
         display: flex;
+    }
+    .box{
+        max-width: 500px;
     }
 }

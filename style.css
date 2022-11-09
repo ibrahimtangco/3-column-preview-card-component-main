@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&display=swap');/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+}
+:root{
+    --orange-clr: hsl(31, 77%, 52%);
+    --dark-cyan-clr: hsl(184, 100%, 22%);
+    --very-dark-cyan-color: hsl(179, 100%, 13%);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    width: 100%;
+    min-height: 100vh;
+}
+button{
+    padding: .7rem;
+    border-radius: 25px;
+    width: 80%;
+    max-width: 150px;
+    border: 0;
+    font-size: .8rem;
+    border: 2px solid #fff;
+    margin-top: 1rem;
+}
+.orange button{
+    color: var(--orange-clr);
+}
+.dark-cyan button{
+    color: var(--dark-cyan-clr);
+}
+.very-dark-cyan button{
+    color: var(--very-dark-cyan-color);
+}
+button:hover{
+    background-color: transparent;
+    color: #fff;
+    overflow: hidden;
+}
+.title{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+.container{
+    width: 80%;
+    margin: 4rem auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.box{
+    width: 100%;
+    color: #fff;
+    min-height: 400px;
+}
+.content{
+    padding: 3rem;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+.content p{
+    line-height: 1.6em;
+    font-size: .8rem;
+}
+.orange{
+    background-color: var(--orange-clr);
+}
+.dark-cyan{
+    background-color: var(--dark-cyan-clr);
+}
+.very-dark-cyan{
+    background-color: var(--very-dark-cyan-color);
+}
+
+@media only screen and (min-width: 800px){
+    .container{
+        display: flex;
+    }
+}
